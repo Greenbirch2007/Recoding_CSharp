@@ -1,0 +1,4 @@
+/home/w/Recoding_CSharp/cst/obj/Debug/netcoreapp2.1/cst.csprojAssemblyReference.cache
+/home/w/Recoding_CSharp/cst/obj/Debug/netcoreapp2.1/cst.csproj.CoreCompileInputs.cache
+/home/w/Recoding_CSharp/cst/obj/Debug/netcoreapp2.1/cst.AssemblyInfoInputs.cache
+/home/w/Recoding_CSharp/cst/obj/Debug/netcoreapp2.1/cst.AssemblyInfo.cs

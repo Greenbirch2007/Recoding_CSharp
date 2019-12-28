@@ -1,0 +1,59 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/w/Recoding_CSharp/cst/XamarinFormsLibrary1/XamarinFormsLibrary1/XamarinFormsLibrary1.csproj": {}
+  },
+  "projects": {
+    "/home/w/Recoding_CSharp/cst/XamarinFormsLibrary1/XamarinFormsLibrary1/XamarinFormsLibrary1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/w/Recoding_CSharp/cst/XamarinFormsLibrary1/XamarinFormsLibrary1/XamarinFormsLibrary1.csproj",
+        "projectName": "XamarinFormsLibrary1",
+        "projectPath": "/home/w/Recoding_CSharp/cst/XamarinFormsLibrary1/XamarinFormsLibrary1/XamarinFormsLibrary1.csproj",
+        "packagesPath": "/home/w/.nuget/packages/",
+        "outputPath": "/home/w/Recoding_CSharp/cst/XamarinFormsLibrary1/XamarinFormsLibrary1/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/w/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.2, )",
+              "autoReferenced": true
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[3.3.0.912540, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

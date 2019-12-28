@@ -1,0 +1,11 @@
+/home/w/Recoding_CSharp/cst/Test/Test/bin/Debug/netcoreapp2.1/Test.deps.json
+/home/w/Recoding_CSharp/cst/Test/Test/bin/Debug/netcoreapp2.1/Test.runtimeconfig.json
+/home/w/Recoding_CSharp/cst/Test/Test/bin/Debug/netcoreapp2.1/Test.runtimeconfig.dev.json
+/home/w/Recoding_CSharp/cst/Test/Test/bin/Debug/netcoreapp2.1/Test.dll
+/home/w/Recoding_CSharp/cst/Test/Test/bin/Debug/netcoreapp2.1/Test.pdb
+/home/w/Recoding_CSharp/cst/Test/Test/obj/Debug/netcoreapp2.1/Test.csprojAssemblyReference.cache
+/home/w/Recoding_CSharp/cst/Test/Test/obj/Debug/netcoreapp2.1/Test.csproj.CoreCompileInputs.cache
+/home/w/Recoding_CSharp/cst/Test/Test/obj/Debug/netcoreapp2.1/Test.AssemblyInfoInputs.cache
+/home/w/Recoding_CSharp/cst/Test/Test/obj/Debug/netcoreapp2.1/Test.AssemblyInfo.cs
+/home/w/Recoding_CSharp/cst/Test/Test/obj/Debug/netcoreapp2.1/Test.dll
+/home/w/Recoding_CSharp/cst/Test/Test/obj/Debug/netcoreapp2.1/Test.pdb
