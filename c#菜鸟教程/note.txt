@@ -20,4 +20,231 @@ c#的一些重要功能
 ２．自动垃圾回收
 ３．标准库
 ４．　组件版本
-５．　属性和时间
+５．　属性和事件
+6. 委托和事件管理
+７．易于使用的泛型
+８．　索引器
+９．　条件编译
+１０．简单的多线程
+１１．　LINQ 和Lambda表达式
+12. 集成Windows
+
+c# 环境
+
+c#是.net框架的一部分，且用于编写.net应用程序
+
+.net框架(.net　framework)
+
+.net框架是一个创新的平台，能够编写出下面的应用程序：
+
+１．windows应用程序
+2.web 应用程序
+３．　web服务
+
+.net框架应用程序是多平台的应用程序。框架的设计方式使它们
+适用于下列各种语言：
+c#,c++,cobol等
+
+
+.net框架由一个巨大的代码库组成，用于c#等客户端语言
+下面列出一些.net框架的组件
+
+１．公共语言运行库(Common Language Runtime-CLR)
+2. .net框架类库(.Net Framework Class Library)
+3. 公共语言规范
+4.通用类型系统
+５．元数据(metadata)和组件(assembilies)
+6. Windows窗体(Windows Froms)
+7. ASP.Net和ASP.Net.AJAX
+8.ADO.net
+9. Windows 工作流基础(Windows workflow Foundation -WF)
+10. Windows 显示基础
+11. Windows通信基础(WCF)
+12. LINQ
+
+C#程序结构(7部分)
+
+一个C#程序主要包括一下部分：
+１．命名空间声明(Namespace declaration)
+
+2.一个class
+3.Class方法
+４．Class属性
+５．　一个Main方法
+６．　语句(Statements)　&表达式(Expressions)
+7.注释
+
+
+注意几点
+
+１．c#是大小写敏感的
+２．所有的语句和表达式必须以分号(;)结尾
+３．程序的执行从Main方法开始
+４．与Java不同，文件名可以不同于类的明后才能够
+
+ｃ
+c#基本语法，是一种面向对象的编程语言。
+在面向对象的程序设计方法中，程序由多种相互交互的对象组成，
+相同种类的对象通常是具有相同的类型，是在相同的class中
+
+using关键字
+
+用于在程序中包含命名空间。一个程序可以包含多个using语句
+
+class关键字用于声明一个类
+
+c#注释用于解析代码　　/**/
+
+成员变量
+
+变量是类的属性或数据成员，用于存储数据
+
+成员函数
+
+函数是一系列执行指定任务的语句。类的成员函数实在类
+内声明的。
+
+
+实例化一个类
+
+标识符
+
+标识符是用来识别类，变量，函数或任何其他用户定义的项目
+
+1.标识符必须以字母，下划线或@开头
+２．标识符中的第一个字符不能是数字
+3.标识符必须不包含任何嵌入的空格或符号
+４．　标识符不能是c#关键字。
+５．标识符必须区分大小写
+６．不能与c#的类库名称相同
+
+
+c#关键字
+
+保留关键字
+
+abstract as base bool break byte case
+catch char checked class const continue decimal
+default delegate do double else enum event
+explicit extern false finally fixed float for
+foreach goto if implicit in in(generic modifier) int
+interface internal is lock long namespace new
+null object operate out out(generic modifier) override parames
+private protected public readonly ref return sbyte
+sealed short sizeof stackalloc static string struct
+
+switch this throw true try typeof uint
+ulong unchecked unsafe ushort using virtual void
+volatile while
+
+上下文关键字
+
+add alias ascending descending dynamic from get
+global group into join let orderby partial(type)
+partial(method) remove select set
+
+
+
+c#数据类型
+
+在c#中，变量分为以下几种类型：
+１．值类型
+2.引用类型
+３．指针类型
+
+
+值类型
+值类型变量可以直接分配个一个值。它从类System.ValueType中派生的
+值类型直接包含数据。
+比如int,char,float分别存储数字，字符，浮点数。
+当声明一个int类型时，系统分配内存来存储值
+
+
+bool,byte,char,decimal,double,float,int,long,sbyte
+short,unit,ulong,ushort,
+
+
+如需得到一个类型或一个变量在特定平台上的准确尺寸，可以使用sizeof方法。
+
+表达式sizeof(type)产生以字节为单位存储对象或类型的存储尺寸
+
+
+引用类型
+
+引用类型不包含存储在变量中的实际数据，但它们包含对变量的引用
+它们指的是一个内存位置。使用多个变量时，引用类型可以指向一个内存位置。
+如果内位置的数据是由一个变量改变的，其他变量会自动反映这种值的变量
+
+内置的引用类型有:object,dynamic,string
+
+对象(Object)类型
+
+对象类型是c#通用类型系统(CTS)中所有数据类型的终极基类。
+Object是System.Object类的别名。所以对象(Object)类型可以被分配
+任何其他类型(值类型，引用类型，预定义类型或用户自定义类型)
+的值。但，在分配值之前，需要先进行类型转换
+
+当一个值类型转换为对象类型时，则被称为装箱;
+另一方面，当一个对象类型转换为值类型时，称为拆箱
+
+object obj;
+obj = 100;// 这是装箱
+
+
+动态类型
+
+可以存储任何类型的值在动态数据类型变量中。这些变量的类型检查是在运行时发生的
+
+声明动态类型的语法：
+
+dynamic <variable_name> = value;
+dynamic d = 20;
+
+
+动态而理性与对象类型相似，但是对象类型变里的类型检查是在编译时发生的，
+而动态类型变量的类型价差是在运行时发生的。
+
+字符串()乐行
+
+字符串类型允许给变量分配任何字符串值。
+字符串类型是Sytem.String类的别名。
+它是从对象(Object)类型派生的。
+字符串类型的值可以通过两种形式进行分配：引号和@引号
+
+String str = "sadf";
+
+一个@引号字符串
+
+@"asdf";
+
+C#string字符串的起那么可以加@(称作"逐字字符串")将转义字符(\)当做普通
+字符对待
+
+string str = @"c:\asdf";
+等价于
+string str="c:\\Windsows";
+
+
+@字符串中可以任意换行，换行符及缩进空格都计算在字符串长度之内
+
+
+string str=@"sdaf"
+
+
+用户自定义引用类型有：class,interface或delegate,
+
+指针类型
+
+指针类型变量存储另一种类型的内存地址。
+c#中的指针与c/c++具有相同的功能
+
+
+声明指针类型的语法：
+
+
+type* identifier
+
+char* cptr;
+int* iptr;
+C# 类型转换
+
